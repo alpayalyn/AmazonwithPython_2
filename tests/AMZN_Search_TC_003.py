@@ -16,13 +16,9 @@ class AddItemToCart(unittest.TestCase):
     def test_add_item_to_cart(self):
         self.driver.get(self.base_URL)
         searchTextBox = self.driver.find_element_by_id("twotabsearchtextbox")
-        # to clear any text in the search textbox
         searchTextBox.clear()
-        # to enter the search term in the search textbox via send_keys() function
         searchTextBox.send_keys(self.search_term)
-        # to search for the entered search term
         searchTextBox.send_keys(Keys.RETURN)
-        # to click on the first search result's link
         self.driver.find_element_by_class_name("aok-relative")[0].click()
         self.driver.find_element_by_id("add-to-wishlist-button-submit").click()
  
