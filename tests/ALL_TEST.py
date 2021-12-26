@@ -1,5 +1,6 @@
 import unittest
 import time
+import HTMLTestRunner
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -90,4 +91,4 @@ class ViewProductDetails(unittest.TestCase):
         self.driver.quit()
         
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:/D/PyWorkspace/amazon/Reports'))
