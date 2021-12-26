@@ -11,7 +11,6 @@ class ViewProductDetails(unittest.TestCase):
     def setUp(self):
         self.driver=webdriver.Chrome(executable_path="C:/seleniumdriver/chromedriver")
         self.driver.maximize_window()
-
     # --- Steps for AMZN_Search_TC_001 ---
     def test_1load_home_page(self):      
         print("User lands on the Home Page")
